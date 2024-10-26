@@ -7,11 +7,12 @@ import ErrorPage from "./pages/ErrorPage"
 import { EmbeddedCapabilities } from "#components/EmbeddedCapabilities"
 
 function App(): JSX.Element {
+  
+alert(orderId)
   const basePath =
     import.meta.env.PUBLIC_PROJECT_PATH != null
       ? `/${import.meta.env.PUBLIC_PROJECT_PATH}`
       : undefined
-alert(orderId)
   return (
     <HelmetProvider>
       <EmbeddedCapabilities.IframeResizerInit />
