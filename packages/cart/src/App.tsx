@@ -11,7 +11,7 @@ function App(): JSX.Element {
     import.meta.env.PUBLIC_PROJECT_PATH != null
       ? `/${import.meta.env.PUBLIC_PROJECT_PATH}`
       : undefined
-
+alert(orderId)
   return (
     <HelmetProvider>
       <EmbeddedCapabilities.IframeResizerInit />
