@@ -3,12 +3,13 @@ import { Router, Route, Switch } from "wouter"
 
 import CartPage from "./pages/CartPage"
 import ErrorPage from "./pages/ErrorPage"
+import TShirt from "./pages/TShirt"
 
 import { EmbeddedCapabilities } from "#components/EmbeddedCapabilities"
 
 function App(): JSX.Element {
   let orderId: string = "NGWrhZQnXN";
-alert(orderId)
+// alert(orderId)
   const basePath =
     import.meta.env.PUBLIC_PROJECT_PATH != null
       ? `/${import.meta.env.PUBLIC_PROJECT_PATH}`
@@ -22,7 +23,7 @@ alert(orderId)
             <ErrorPage />
           </Route>
           <Route path={"/tshirt"}>
-            <ErrorPage />
+            <TShirt />
           </Route>
           <Route path={"/:orderId"}>
             <CartPage />
