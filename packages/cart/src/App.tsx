@@ -7,7 +7,7 @@ import ErrorPage from "./pages/ErrorPage"
 import { EmbeddedCapabilities } from "#components/EmbeddedCapabilities"
 
 function App(): JSX.Element {
-  
+  let orderId: string = "NGWrhZQnXN";
 alert(orderId)
   const basePath =
     import.meta.env.PUBLIC_PROJECT_PATH != null
