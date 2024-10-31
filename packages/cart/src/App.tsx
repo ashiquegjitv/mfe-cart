@@ -21,6 +21,9 @@ alert(orderId)
           <Route path={"/404"}>
             <ErrorPage />
           </Route>
+          <Route path={"/tshirt"}>
+            <ErrorPage />
+          </Route>
           <Route path={"/:orderId"}>
             <CartPage />
           </Route>
